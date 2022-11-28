@@ -3,7 +3,7 @@
 # Create your views here.
 # dwitter/views.py
 from django.shortcuts import render,redirect
-from .models import Profile
+from .models import Profile,Dweet
 from .forms import DweetForm
 def dashboard(request):
     form = DweetForm(request.POST or None)
@@ -13,8 +13,14 @@ def dashboard(request):
             dweet.user = request.user
             dweet.save()
             return redirect("dwitter:dashboard")
-    return render(request, "dwitter/dashboard.html", {"form": form})
-    
+    followed_dweets = Dweet.objects.filter(
+    user__profile__in=request.user.profile.follows.all()
+    ).order_by("-created_at")
+
+    return render(request,
+    "dwitter/dashboard.html",
+    {"form": form, "dweets": followed_dweets},
+    )
 def profile_list(request):
     profiles = Profile.objects.exclude(user=request.user)
     return render(request, "dwitter/profile_list.html", {"profiles": profiles})

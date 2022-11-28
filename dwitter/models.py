@@ -25,7 +25,7 @@ def create_profile(sender, instance, created, **kwargs):
         user_profile.follows.add(instance.profile)
         user_profile.save()
         # Remove: post_save.connect(create_profile, sender=User)
-
+#name of model is single and capital letter in first letter on it
 class Dweet(models.Model):
     user = models.ForeignKey(
     User, related_name="dweets", on_delete=models.DO_NOTHING
