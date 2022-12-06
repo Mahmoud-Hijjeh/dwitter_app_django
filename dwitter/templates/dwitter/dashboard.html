@@ -1,6 +1,8 @@
 <!-- dwitter/templates/dwitter/dashboard.html -->
 {% extends 'base.html' %}
 {% block content %}
+Hello, {{ user.username|default:'Guest' }}!
+{% if user.is_authenticated %}
 <div class="column">
     {% for dweet in dweets %}
     <div class="box">
@@ -41,4 +43,13 @@ type="submit">Dweet
 </div>
 </div>
 </div>
+<div>
+<a href="{% url 'dwitter:logout' %}">Logout</a>
+<a href="{% url 'dwitter:password_change' %}">Change password</a>
+</div>
+{% else %}
+<div>
+<a href="{% url 'dwitter:login' %}">Login</a>
+</div>
+{% endif %}
 {% endblock content %}

@@ -13,8 +13,8 @@ class UserAdmin(admin.ModelAdmin):
     fields = ["username"]
     inlines = [ProfileInline]
 
-admin.site.unregister(User)
+#admin.site.register(User)
 #admin.site.register(Profile)
-admin.site.register(User, UserAdmin)
-admin.site.unregister(Group)
+# admin.site.register(User, UserAdmin)
+#admin.site.unregister(Group)
 admin.site.register(Dweet)
