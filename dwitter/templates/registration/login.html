@@ -7,9 +7,28 @@
 {{ form.as_p }}
 <input type="submit" value="Login">
 </form>
-<div>
-<a href="{% url 'dwitter:dashboard' %}">Back to dashboard</a>
-<a href="{% url 'dwitter:password_reset' %}">Reset password</a>
-<a href="{% url 'dwitter:register' %}">Register</a>
+<div class="column is-one-third">
+    <div class="block">
+    <a href="{% url 'dwitter:dashboard' %} ">
+    <button class="button is-dark is-outlined ">
+    Back to dashboard
+    </button>
+    </a>
+    </div>
+    <div class="block">
+    <a href="{% url 'dwitter:password_reset' %} ">
+    <button class="button is-success is-light is-outlined">
+    Reset password
+    </button>
+    </a>
+    </div>
+    <div class="block">
+        <a href="{% url 'dwitter:register' %} ">
+        <button class="button is-success is-light is-outlined">
+        Register
+        </button>
+        </a>
+    </div>
 </div>
+
 {% endblock %}

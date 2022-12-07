@@ -43,13 +43,31 @@ type="submit">Dweet
 </div>
 </div>
 </div>
-<div>
-<a href="{% url 'dwitter:logout' %}">Logout</a>
-<a href="{% url 'dwitter:password_change' %}">Change password</a>
+<div class="column is-one-third">
+    <div class="block">
+    <a href="{% url 'dwitter:logout' %} ">
+    <button class="button is-dark is-outlined ">
+    Logout
+    </button>
+    </a>
+    </div>
+    <div class="block">
+    <a href="{% url 'dwitter:password_change' %} ">
+    <button class="button is-success is-light is-outlined">
+    Password Change
+    </button>
+    </a>
+    </div>
 </div>
 {% else %}
-<div>
-<a href="{% url 'dwitter:login' %}">Login</a>
+<div class="column is-one-third">
+    <div class="block">
+    <a href="{% url 'dwitter:login' %} ">
+    <button class="button is-dark is-outlined">
+    Login
+    </button>
+    </a>
+    </div>
 </div>
 {% endif %}
 {% endblock content %}
