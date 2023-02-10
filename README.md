@@ -5,12 +5,12 @@
 The focus of this project is to showcase the use of Django models, forms, and the implementation of user-to-user connections and text-based content creation and display.
 
 # Features 🎉
-🔗 User-to-user connections: Allows users to connect with each other by following or unfollowing other user profiles.
-📝 Content creation and display: Users can post short text-based messages and view the posts of other user profiles they follow.
-👥 User profiles: Each user will have their own profile that holds information about which other profiles they follow.
-🔒 User authentication: Users can log in and log out and also register as a new user.
-👀 Profile information display: Users can view their own profile and the profiles of other users.
-💬 Comments: Users can comment on other users' posts.
+. 🔗 User-to-user connections: Allows users to connect with each other by following or unfollowing other user profiles.
+. 📝 Content creation and display: Users can post short text-based messages and view the posts of other user profiles they follow.
+. 👥 User profiles: Each user will have their own profile that holds information about which other profiles they follow.
+. 🔒 User authentication: Users can log in and log out and also register as a new user.
+. 👀 Profile information display: Users can view their own profile and the profiles of other users.
+. 💬 Comments: Users can comment on other users' posts.
 
 # Technical Analysis
 💻 The application consists of the following components:
