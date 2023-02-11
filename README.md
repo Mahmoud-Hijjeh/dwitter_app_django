@@ -1,10 +1,10 @@
-## 🚀Dwitter(Twitter clone) Django App
+# 🚀Dwitter(Twitter clone) Django App
 
-# Introduction
+## Introduction
 💻 Building a social network web application using the Django framework. 
 The focus of this project is to showcase the use of Django models, forms, and the implementation of user-to-user connections and text-based content creation and display.
 
-# Features 🎉
+## Features 🎉
  - 🔗 User-to-user connections: Allows users to connect with each other by following or unfollowing other user profiles.
  - 📝 Content creation and display: Users can post short text-based messages and view the posts of other user profiles they follow.
  - 👥 User profiles: Each user will have their own profile that holds information about which other profiles they follow.
@@ -12,7 +12,7 @@ The focus of this project is to showcase the use of Django models, forms, and th
  - 👀 Profile information display: Users can view their own profile and the profiles of other users.
  - 💬 Comments: Users can comment on other users' posts.
 
-# Technical Analysis
+## Technical Analysis
 💻 The application consists of the following components:
   - Models: The main models used in this application are the User, Profile, and Dweet models.
   - Views: The views handle the CRUD operations for the models and also handle user authentication and registration.
@@ -20,19 +20,19 @@ The focus of this project is to showcase the use of Django models, forms, and th
   - Forms: Forms are used for submitting content and handling user authentication and registration.
   - Signals: Signals are used to automatically create a profile for each new user.
 
-# Back-end
+## Back-end
 - The back-end of the application is built using Django (Python Framework)
 
-# Frontend
+## Frontend
 - The frontend of the application is built using Bulma CSS Framework for styling and HTML for the structure.
 - The dynamic content is generated using Django template code.
 
-# Requirements 🔧
+## Requirements 🔧
 Django 💻
 Python 🐍
 SQLite 🗄️
 
-# Usage
+## Usage
 
 To use this dwitter app, follow these steps:
 
@@ -45,12 +45,13 @@ To use this dwitter app, follow these steps:
 6. Run the development server with `python manage.py runserver`.
 7. In your web browser, go to `http://127.0.0.1:8000/` to access the app.
 
-# License
+## License
 This project is licensed under the MIT License.
 
-# Conclusion
+## Conclusion
 🎉 This project provides a good introduction to building a social network application using the Django framework. It showcases the use of models, views, templates, forms, and signals in a Django application and provides a solid foundation for building more complex applications in the future.
 
+## Images
 ![1](https://user-images.githubusercontent.com/107920651/218224592-a3fc4487-bb36-487d-9c34-0b10bfe63010.PNG)
 ![2](https://user-images.githubusercontent.com/107920651/218224598-a2c5468d-0fe0-4d0f-a7e6-922da7665464.PNG)
 ![3](https://user-images.githubusercontent.com/107920651/218224609-3a6d10cb-fb69-448c-a6ad-ddcb15a570d7.PNG)
