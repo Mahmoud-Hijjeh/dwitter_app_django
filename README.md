@@ -1,5 +1,11 @@
 # 🚀Dwitter(Twitter clone) Django App
 
+## Acknowledgements
+- This project is a part of the [Gaza Sky Geeks ](https://gazaskygeeks.com/) Training program.
+<p align="center">
+<img src="https://gazaskygeeks.com/wp-content/uploads/2020/05/gsg-website-logo-colored-280-50.png" width="40%">
+</p>
+
 ## Introduction
 💻 Building a social network web application using the Django framework. 
 The focus of this project is to showcase the use of Django models, forms, and the implementation of user-to-user connections and text-based content creation and display.
